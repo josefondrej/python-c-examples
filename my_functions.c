@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 
-int square(int i) {
-	return i * i;
+float multiply(float i, float j) {
+	return i * j;
 }
