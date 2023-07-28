@@ -8,13 +8,13 @@ Examples on how to call C code from Python.
 
 ## Pre-requisites
 
-Install [Cygwin](https://www.cygwin.com/) with the following packages:
+- Install [Cygwin](https://www.cygwin.com/) with the following packages:
+    - `gcc-core`
+    - `gcc-g++`
+    - `python3-devel`
 
-- `gcc-core`
-- `gcc-g++`
-- `python3-devel`
-
-Add the path to the Cygwin bin (e.g. `C:/cygwin64/bin`) folder to the Windows PATH environment variable.
+- Add the path to the Cygwin bin (e.g. `C:/cygwin64/bin`) folder to the Windows PATH environment variable.
+- Create new python 3.10 environment and install requirements by running `pip install -r requirements.txt`
 
 ## Ctypes
 
@@ -44,3 +44,6 @@ You should see the following output:
 <class 'ctypes.CDLL'>
 64
 ```
+
+## CFFI
+
