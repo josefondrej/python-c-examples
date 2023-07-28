@@ -22,19 +22,20 @@ Based on this tutorial: https://www.digitalocean.com/community/tutorials/calling
 
 ### Pre-requisites
 
-Create a shared library from C code by running
+Create a shared library from C code by running (from the root of the project):
 
 ```bash
-gcc -fPIC -shared -o my_functions.so my_functions.c
+gcc -fPIC -shared -o ctypes/my_functions.so ctypes/my_functions.c
 ```
 
-this should generate file `my_functions.so` in the current directory.
+this should generate file `my_functions.so` in the `ctypes` directory.
 
 ### Run
 
 Run the Python script by running
 
 ```bash
+cd ctypes
 python ctypes_example.py
 ```
 
