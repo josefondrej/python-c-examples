@@ -48,6 +48,12 @@ You should see the following output:
 
 ## CFFI
 
+Has 2 modes -- API and ABI. API uses C compiler to generate full python module, ABI loads the shared library (.so?) and
+interacts with it directly. **API is the preffered way.**
+
+Has 2 ways when to compile the bindings -- `in-line` mode compiles every time you run the python script. 
+`out-of-line` mode compiles once and then uses the compiled module = faster. That is what we will use.
+
 = C Foreign Function Interface for Python.
 
 ### Pre-requisites
@@ -55,10 +61,12 @@ You should see the following output:
 - Install [Visual Studio Build Tools](https://stackoverflow.com/questions/64261546/how-to-solve-error-microsoft-visual-c-14-0-or-greater-is-required-when-inst)
 - Build the shared library by running (from the root of the project):
 
-```bash
-cd cffi
-python build.py
-``` 
+  ```bash
+  cd cffi
+  python build.py
+  ``` 
+  which produces something like `my_functions_module.cp310-win_amd64.pyd` and `my_functions_module.c` files in
+  the `cffi` directory.
 
 ### Run
 
@@ -68,3 +76,5 @@ From the root of the project, run:
 cd cffi
 python cffi_example.py
 ```
+
+You should get `12.0` as output
