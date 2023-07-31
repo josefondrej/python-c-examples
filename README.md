@@ -48,3 +48,23 @@ You should see the following output:
 
 ## CFFI
 
+= C Foreign Function Interface for Python.
+
+### Pre-requisites
+
+- Install [Visual Studio Build Tools](https://stackoverflow.com/questions/64261546/how-to-solve-error-microsoft-visual-c-14-0-or-greater-is-required-when-inst)
+- Build the shared library by running (from the root of the project):
+
+```bash
+cd cffi
+python build.py
+``` 
+
+### Run
+
+From the root of the project, run:
+
+```bash
+cd cffi
+python cffi_example.py
+```
