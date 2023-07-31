@@ -18,6 +18,8 @@ Examples on how to call C code from Python.
 
 ## Ctypes
 
+Focuses on C (not C++)
+
 Based on this tutorial: https://www.digitalocean.com/community/tutorials/calling-c-functions-from-python
 
 ### Pre-requisites
@@ -47,6 +49,8 @@ You should see the following output:
 ```
 
 ## CFFI
+
+Focuses on C (not C++).
 
 Has 2 modes -- API and ABI. API uses C compiler to generate full python module, ABI loads the shared library (.so?) and
 interacts with it directly. **API is the preffered way.**
