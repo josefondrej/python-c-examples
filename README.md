@@ -108,7 +108,7 @@ and then run the example by
 
 ```
 cd pybind11
-python example.py
+python pybind11_example.py
 ```
 
 You should see the output 3.0.
