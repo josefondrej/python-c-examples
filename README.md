@@ -117,3 +117,31 @@ You should see the output 3.0.
 
 - https://stackoverflow.com/questions/76323649/pybind11-compilation-errors-from-several-library-files
 - https://learn.microsoft.com/en-us/visualstudio/python/working-with-c-cpp-python-in-visual-studio?view=vs-2022
+
+## Cython
+
+Uses python-like language that generates C or C++ code that can be compiled into a python module.
+
+https://cython.readthedocs.io/en/latest/src/tutorial/cython_tutorial.html
+
+### Pre-requisities
+
+Install cython using pip.
+
+### Run
+
+From the root of the project, run:
+
+```
+cd cython
+python setup.py build_ext --inplace
+```
+
+and then from the root of the project, run:
+
+```
+cd cython
+python cython_example.py
+```
+
+You should see the output 5.0
