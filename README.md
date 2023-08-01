@@ -91,7 +91,7 @@ You should get `12.0` as output
 
 Focuses on C++ 11 and newer (not C). Generates python module that can be used directly.
 
-### Pre-requisities 
+### Pre-requisities
 
 Install Visual Studio with C++ and Python dev tools. Install pybind11 using pip.
 
@@ -104,7 +104,7 @@ cd pybind11
 pip install .
 ```
 
-and then run the example by 
+and then run the example by
 
 ```
 cd pybind11
@@ -112,3 +112,8 @@ python example.py
 ```
 
 You should see the output 3.0.
+
+### Useful links
+
+- https://stackoverflow.com/questions/76323649/pybind11-compilation-errors-from-several-library-files
+- https://learn.microsoft.com/en-us/visualstudio/python/working-with-c-cpp-python-in-visual-studio?view=vs-2022
