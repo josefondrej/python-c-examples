@@ -1,8 +1,15 @@
 # Python - C examples
 
-Examples on how to call C code from Python.
+Examples on how to call C code from Python. There are basically 4 options:
+
+- ctypes
+- CFFI
+- PyBind11
+- Cython
 
 ## Useful links
+
+Based on:
 
 - https://realpython.com/python-bindings-overview/
 
@@ -17,7 +24,7 @@ Examples on how to call C code from Python.
 - Add the path to the Cygwin bin (e.g. `C:/cygwin64/bin`) folder to the Windows PATH environment variable.
 - Create new python 3.10 environment and install requirements by running `pip install -r requirements.txt`
 
-## Ctypes
+## 1. Ctypes
 
 Focuses on C (not C++)
 
@@ -49,7 +56,7 @@ You should see the following output:
 64
 ```
 
-## CFFI
+## 2. CFFI
 
 Focuses on C (not C++). Generates python module that can be used directly.
 
@@ -87,7 +94,7 @@ python cffi_example.py
 
 You should get `12.0` as output
 
-## PyBind11
+## 3. PyBind11
 
 Focuses on C++ 11 and newer (not C). Generates python module that can be used directly.
 
@@ -118,7 +125,7 @@ You should see the output 3.0.
 - https://stackoverflow.com/questions/76323649/pybind11-compilation-errors-from-several-library-files
 - https://learn.microsoft.com/en-us/visualstudio/python/working-with-c-cpp-python-in-visual-studio?view=vs-2022
 
-## Cython
+## 4. Cython
 
 Uses python-like language that generates C or C++ code that can be compiled into a python module.
 
